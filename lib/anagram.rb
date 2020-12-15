@@ -5,6 +5,7 @@ class Anagram
   end
 
   def match(text)
+    text.reverse
     text.include?(@word)
   end
 end

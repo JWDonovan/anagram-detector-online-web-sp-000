@@ -5,10 +5,14 @@ class Anagram
   end
 
   def match(array)
+    collection = []
+
     array.collect do |w|
       if w == @word.reverse
-        w
+        collection << w
       end
     end
+
+    collection
   end
 end

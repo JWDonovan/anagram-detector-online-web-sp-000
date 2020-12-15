@@ -4,7 +4,9 @@ class Anagram
     @word = word
   end
 
-  def match(text)
-
+  def match(array)
+    array.collect do |w|
+      if w == @word.reverse
+    end
   end
 end

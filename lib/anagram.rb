@@ -5,14 +5,6 @@ class Anagram
   end
 
   def match(array)
-    collection = []
-
-    array.each do |w|
-      if w === @word.reverse
-        collection << w
-      end
-    end
-
-    collection
+    array.select {|x| x.split("").sort == @name.split("").sort}
   end
 end

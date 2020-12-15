@@ -8,7 +8,7 @@ class Anagram
     collection = []
 
     array.collect do |w|
-      if w == @word.reverse
+      if w === @word.reverse
         collection << w
       end
     end

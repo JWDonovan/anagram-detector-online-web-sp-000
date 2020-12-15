@@ -5,6 +5,6 @@ class Anagram
   end
 
   def match(text)
-    
+
   end
 end

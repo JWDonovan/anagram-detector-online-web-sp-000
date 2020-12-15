@@ -7,6 +7,7 @@ class Anagram
   def match(array)
     array.collect do |w|
       if w == @word.reverse
+        w
     end
   end
 end
